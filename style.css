@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
+
+main {
+  width: 800px;
+  height: 600px;
+  position: relative;
+  background: #FFCDD2;
+  display: flex;
+  align-items: center; }
+
+.ui__left, .ui__right {
+  width: 300px;
+  height: 500px;
+  background: #2196F3;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: 0 0 5px 4px rgba(255, 12, 100, 0.26);
+  background: #ccc; }
+
+.ui__left {
+  border-radius: 15px;
+  left: 3em; }
+  .ui__left-head {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 40%;
+    background: #EF5350;
+    position: relative;
+    display: block; }
+    .ui__left-head i {
+      position: absolute;
+      color: #FAFAFA;
+      font-size: 1.5em;
+      top: 5px;
+      left: 5px; }
+      .ui__left-head i:hover {
+        cursor: pointer; }
+    .ui__left-head img {
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      position: relative;
+      top: 40px; }
+    .ui__left-head p {
+      color: #FAFAFA;
+      position: relative;
+      top: 40px; }
+  .ui__left-body {
+    height: 50%; }
+    .ui__left-body ul {
+      list-style: none;
+      text-align: left;
+      line-height: 2.3em;
+      background: #FAFAFA;
+      box-shadow: 0px 1px 5px 0px #616161; }
+      .ui__left-body ul li {
+        color: #424242;
+        border-bottom: 1px solid #D7CCC8;
+        cursor: pointer; }
+        .ui__left-body ul li:hover {
+          background: #D7CCC8;
+          color: #fff; }
+        .ui__left-body ul li span {
+          position: absolute;
+          left: 10px; }
+          .ui__left-body ul li span i.fas.fa-notes-medical {
+            color: purple; }
+          .ui__left-body ul li span i.fas.fa-heart {
+            color: #E53935; }
+          .ui__left-body ul li span i.fas.fa-comments {
+            color: blue; }
+          .ui__left-body ul li span i.fas.fa-arrow-alt-circle-down {
+            color: #388E3C; }
+          .ui__left-body ul li span i.fas.fa-pen-square {
+            color: #757575; }
+          .ui__left-body ul li span i.fas.fa-chevron-right {
+            position: relative;
+            top: 0;
+            left: 14em; }
+        .ui__left-body ul li p {
+          position: relative;
+          margin-left: 40px;
+          font-weight: 500; }
+      .ui__left-body ul li:last-child {
+        border: none; }
+  .ui__left-footer {
+    height: 10%;
+    background: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px -2px 5px 0px #616161;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    grid-template-rows: 1fr; }
+    .ui__left-footer .col-3 {
+      align-self: center; }
+      .ui__left-footer .col-3:hover {
+        cursor: pointer; }
+      .ui__left-footer .col-3:nth-child(3) {
+        color: #E53935; }
+        .ui__left-footer .col-3:nth-child(3) p {
+          color: #E53935; }
+      .ui__left-footer .col-3 i {
+        font-size: 20px; }
+      .ui__left-footer .col-3 p {
+        color: #424242;
+        font-weight: 500;
+        font-size: 14px; }
+
+.ui__right {
+  right: -9em; }
+
+/*# sourceMappingURL=style.css.map */
