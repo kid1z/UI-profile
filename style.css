@@ -27,11 +27,14 @@ main {
   position: relative;
   border-radius: 15px;
   box-shadow: 0 0 5px 4px rgba(255, 12, 100, 0.26);
-  background: #ccc; }
+  background: #ebebeb; }
 
 .ui__left {
   border-radius: 15px;
-  left: 3em; }
+  left: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
   .ui__left-head {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -58,19 +61,19 @@ main {
       position: relative;
       top: 40px; }
   .ui__left-body {
-    height: 50%; }
+    position: relative; }
     .ui__left-body ul {
       list-style: none;
       text-align: left;
       line-height: 2.3em;
       background: #FAFAFA;
-      box-shadow: 0px 1px 5px 0px #616161; }
+      box-shadow: 0px 1px 5px 0px #8f8d8d; }
       .ui__left-body ul li {
         color: #424242;
         border-bottom: 1px solid #D7CCC8;
         cursor: pointer; }
         .ui__left-body ul li:hover {
-          background: #D7CCC8;
+          background: #e0e0e0;
           color: #fff; }
         .ui__left-body ul li span {
           position: absolute;
@@ -100,7 +103,7 @@ main {
     background: white;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    box-shadow: 0px -2px 5px 0px #616161;
+    box-shadow: 0px -2px 5px 0px #8f8d8d;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -123,5 +126,42 @@ main {
 
 .ui__right {
   right: -9em; }
+  .ui__right-head {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    background: #EF5350;
+    height: 10%;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #FAFAFA;
+    font-weight: 500;
+    font-size: 1.2em; }
+    .ui__right-head span:hover {
+      cursor: pointer; }
+  .ui__right-body1 {
+    top: 0 !important; }
+    .ui__right-body1 .body2-right {
+      margin: 20px 0; }
+    .ui__right-body1 p#line {
+      font-weight: 500;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      color: #424242; }
+    .ui__right-body1 p#line::before, .ui__right-body1 p::after {
+      content: "";
+      border-top: 2px solid;
+      margin: 0 20px 0 0;
+      flex: 1; }
+    .ui__right-body1 p#line::after {
+      margin: 0 0 0 20px; }
+  .ui__right-footer {
+    text-align: center;
+    font-weight: 500; }
+    .ui__right-footer:hover {
+      cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */
